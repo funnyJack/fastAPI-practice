@@ -16,6 +16,7 @@ from module_admin.controller.log_controller import logController
 from module_admin.controller.login_controller import loginController
 from module_admin.controller.job_controller import jobController
 from module_admin.controller.menu_controller import menuController
+from module_admin.controller.my_controller.email_config_controller import emailConfigController
 from module_admin.controller.notice_controller import noticeController
 from module_admin.controller.online_controller import onlineController
 from module_admin.controller.post_controler import postController
@@ -79,6 +80,7 @@ controller_list = [
     {'router': cacheController, 'tags': ['系统监控-缓存监控']},
     {'router': commonController, 'tags': ['通用模块']},
     {'router': genController, 'tags': ['代码生成']},
+    {'router': emailConfigController, 'tags': ['邮箱配置查看']},
 ]
 
 for controller in controller_list:
